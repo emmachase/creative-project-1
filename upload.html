@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>emmages - Upload</title>
+    <link rel="icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="approot">
+        <header class="">
+            <nav><a class="" href="/gallery">GALLERY</a><a class="" href="/list">LIST</a><a class="active" href="/upload">UPLOAD</a></nav>
+            <div class="nav-right"><a href="/">Logout</a>
+                <div style="width:24px;height:20px;position:relative;transform:rotate(0deg)" class="hamburger"><span
+                        style="display:block;height:2px;width:100%;background:#000;transition-timing-function:ease;transition-duration:0.4s;border-radius:0px;transform-origin:center;position:absolute;transform:translate3d(0,0,0) rotate(0);margin-top:-1px"></span><span
+                        style="display:block;height:2px;width:100%;background:#000;transition-timing-function:ease-out;transition-duration:0.1s;border-radius:0px;transform-origin:center;position:absolute;opacity:1;top:10px;margin-top:-1px"></span><span
+                        style="display:block;height:2px;width:100%;background:#000;transition-timing-function:ease;transition-duration:0.4s;border-radius:0px;transform-origin:center;position:absolute;transform:translate3d(0,20px,0) rotate(0);margin-top:-1px"></span>
+                </div>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <div class="twobreak" style="display:flex;justify-content:center">
+                <div style="flex:1;flex-direction:column;display:flex;align-items:center"><svg class="uploadbox waiting"
+                        viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="clickable"
+                            d="M32 50H429V447C429 463.569 415.569 477 399 477H32C15.4315 477 2 463.569 2 447V80C2 63.4315 15.4315 50 32 50Z"
+                            fill="#AAAAAA" fill-opacity="0" stroke="#AAAAAA" stroke-width="4"></path>
+                        <rect x="427" width="53" height="97" fill="white"></rect>
+                        <rect x="383" width="97" height="52" fill="white"></rect>
+                        <line x1="429" y1="13" x2="429" y2="84" stroke="#AAAAAA" stroke-width="4"></line>
+                        <line x1="392" y1="50" x2="464" y2="50" stroke="#AAAAAA" stroke-width="4"></line>
+                        <path d="M169.101 232.5L215 153L260.899 232.5H169.101Z" stroke="#AAAAAA" stroke-width="4">
+                        </path>
+                        <circle cx="286" cy="313" r="48" stroke="#AAAAAA" stroke-width="4"></circle>
+                        <rect x="96" y="265" width="96" height="96" stroke="#AAAAAA" stroke-width="4"></rect>
+                    </svg></div>
+                <div style="flex:1;display:flex;justify-content:center" class="form-bar">
+                    <div style="display:flex;flex-direction:column">
+                        <div class="form-entry">
+                            <div class="heading" style="display:flex"><span class="label">Filename</span>
+                                <div style="flex:1"></div><span class="optional">optional</span>
+                            </div>
+                            <div class="textfield"><input type="text" placeholder="shapes.png" /></div>
+                        </div>
+                        <div class="form-entry">
+                            <div class="heading" style="display:flex"><span class="label">Description</span>
+                                <div style="flex:1"></div><span class="optional">optional</span>
+                            </div>
+                            <div class="textfield"><textarea type="text"
+                                    placeholder="This image is epic and has cool elements."></textarea></div>
+                        </div>
+                        <div class="form-entry">
+                            <div class="heading" style="display:flex"><span class="label">Tags</span>
+                                <div style="flex:1"></div><span class="optional">optional</span>
+                            </div>
+                            <div class="textfield"><input type="text" placeholder="tetris, pretty, epic" /></div>
+                        </div>
+                        <aside>The description and tags are purely used for searching / indexing purposes at the moment.
+                        </aside>
+                        <div class="submit" style="display:flex">
+                            <div style="flex:1"></div><button class="button hide-load">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-accent"><svg width="1920" height="531" viewBox="0 0 1920 531" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M343.205 294.97L-3.13958 394.185C-55.1528 409.085 -91 456.643 -91 510.748C-91 577.714 -36.7138 632 30.2516 632H1760C1870.46 632 1960 542.457 1960 432V139.987C1960 69.0005 1906.87 9.25151 1836.36 0.96072C1808.86 -2.27362 1781.02 2.72233 1756.35 15.3165L1128.27 336.043C1093.2 353.949 1053.63 361.106 1014.52 356.619L421.076 288.54C394.949 285.543 368.487 287.728 343.205 294.97Z"
+                    fill="#C4C4C4" fill-opacity="0.2"></path>
+            </svg></div>
+    </div>
+</body>
+
+</html>
